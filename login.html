@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<base href= "https://bgw-eswky.run.goorm.io/20200988bgw/"> 
+		<script src ="js/input.js"></script>
+		<script src ="js/session_storage1.js"></script>
+		<title>로그인</title>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/53a8c415f1.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/login.css">
+	</head>
+	<body>
+		<p style = "text-align:center">
+			<a href = "index.html" target = "_blank"><img src = "img/googlelogo_color_272x92dp.png" alt = "구글이미지" onmouseover = "over(this)"></a>
+		<br><br><!구글 이미지 아래에 문자열 추가하기 위한 공백>
+		<b>
+			<font size = "6em" color = "green"> 구글 계정으로 로그인</font>
+		</b>
+		<br><br>
+		</p>
+		<form id = "form_send" action = "index_main.html" method ="get">
+			<div class="login" style="position:relative; left:35%">
+				<div class="login_id">
+                <h4>GOOGLE ID</h4>
+                <input type="email" id= "js_userid" name="id" placeholder="아이디 입력"><br>
+            	</div>
+            	<div class="login_pw">
+                <h4>PASSWORD</h4>
+                <input type="password" name="" id="" placeholder="Password">
+            	</div>
+            	<div class="login_etc">
+                <div class="checkbox">
+                <input type="checkbox" name="" id=""> Remember Me?
+                </div>
+                <div class="forgot_pw">
+                <a href="">Forgot Password?</a>
+            	</div>
+            	</div>
+            	<div class="submit">
+                <input type="submit" value="로그인 - GET방식" onclick="session_save();">
+            	</div>
+				<div class="submit">
+				<input type="reset">
+			</div>
+        </div>
+		</form>
+	</body>
+</html>

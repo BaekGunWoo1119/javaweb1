@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<base href= "https://bgw-eswky.run.goorm.io/20200988bgw/"> 
+		<script src ="js/userjoin.js"></script>
+		<title>회원가입</title>
+	</head>
+	<body>
+		<p style = "text-align:center">
+			<a href = "index.html" target = "_blank"><img src = "img/googlelogo_color_272x92dp.png" alt = "구글이미지" onmouseover = "over(this)"></a>
+		<br><br><!구글 이미지 아래에 문자열 추가하기 위한 공백>
+		<b>
+			<font size = "6em" color = "green"> 회원가입</font>
+		</b>
+		<br><br>
+		</p>
+		<div style = "text-align:center">
+		<form id = "form_send" action = "index.html" method ="post">
+			<input id= "family_name" name="fmname" placeholder="성">
+			<input id= "name" name="name" placeholder="이름"><br><br>
+			<input type="email" id= "js_userid" name="id" placeholder="이메일@.com"><br><br>
+			<label for="user_pass">비밀번호/비밀번호 확인</label><br>
+			<input type="password" id="js_password" name="pw" placeholder="패스워드 입력">
+			<input type="password" id="re_password" name="pw" placeholder="패스워드 확인"><br><br>
+			<input type="button" onclick="form_check()" value="회원가입">
+			<input type = "reset">
+		</form>
+		</div>
+	</body>
+</html>
